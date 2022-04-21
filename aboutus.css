@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.navbar {
+    z-index: 2;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0c8eea;
+    padding: 0px 103px;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+
+.navbar-links {
+    font-weight: bold;
+    display: flex;
+}
+
+.navbar-links li a {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0px 20px;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Poppins", sans-serif;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    margin: 0px 10px;
+}
+
+.logo li {
+
+    font-weight: bold;
+    font-size: 2.4rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo li a {
+    color: white;
+}
+
+/* adding styles to header section  */
+.header{
+    margin-top: 67px;
+}
+.header-first{
+    color:white;
+    width: 100vw;
+    height: 80vh;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: relative;
+    background: url('https://demo.themefisher.com/educenter/images/about/about-page.jpg') no-repeat center center/contain;
+    opacity: 0.9;
+}
+.header-first::before{
+    content: '';
+    background:rgb(4, 4, 83);
+
+    position: absolute;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 80vh;
+
+    z-index: -1;
+}
+.header-first>h1{
+    margin:40px auto;
+    padding: 80px 0px;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+  font-weight: bold;
+  font-size:3rem;
+  text-align: left;
+  width: 70%;
+}
+.header-first>p{
+    margin:30px auto;
+  font-weight: bold;
+  width: 70%;
+  line-height: 30px;
+  font-size:1.3rem;
+  text-align:left;
+}
+
+/* adding styles to the numbers section  */
+
+.numbers{
+    display: flex;
+    background-color: rgb(149, 149, 226);
+    justify-content: center;
+}
+.numbers div{
+    margin:40px 100px;
+    color:white;
+    text-align: center;
+
+}
+
+.numbers div h2 {
+    font-size: 3rem;
+    font-weight: bold; 
+  
+}
+.numbers div p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+/* adding styles to footer  */
+footer {
+    padding:50px 0px;
+    font-family: "Ubuntu", sans-serif;
+    background:rgb(2, 2, 42);
+    color: white;
+    
+  }
+  footer > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  footer h2 ,footer h1{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 0px;
+  }
+  footer li{
+    list-style: none;
+    margin: 10px 0px;
+    font-size: 1.3rem;
+    color:gray
+  }
+  footer a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color:gray;
+  }
+  footer h1{
+    font-size: 2rem;
+  }

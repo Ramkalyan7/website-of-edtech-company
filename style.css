@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+
+}
+
+.navbar {
+    z-index: 2;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0c8eea;
+    padding: 0px 103px;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+
+.navbar-links {
+    font-weight: bold;
+    display: flex;
+}
+
+.navbar-links li a {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0px 20px;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Poppins", sans-serif;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    margin: 0px 10px;
+}
+
+.logo li {
+
+    font-weight: bold;
+    font-size: 2.4rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo li a {
+    color: white;
+}
+
+/* header section  */
+.header {
+    width: 100vw;
+    height: 100vh;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    background: url('./home/mainimg.jpg') no-repeat center center/cover;
+    opacity: 0.9;
+
+}
+
+.header::before {
+    content: '';
+    background: #00000d;
+
+    position: absolute;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: -1;
+}
+
+.header div {
+    position: absolute;
+    top: 135px;
+    left: 103px;
+    width: 800px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header div h1 {
+    color: white;
+    font-size: 4rem;
+    line-height: 76px;
+    font-weight: bold;
+
+}
+
+.header div p {
+    color: rgb(245, 242, 242);
+    font-size: 1rem;
+    margin: 20px 0px;
+    line-height: 30px;
+    font-size: 1.3rem;
+}
+
+.header div button {
+    margin: 20px 0px;
+    padding: 15px;
+    color: white;
+    background: #0c8eea;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+a:hover{
+  border-bottom:2px solid white;
+}
+a:active{
+  border-bottom: 3px solid white;
+}
+
+
+button{
+  cursor:pointer;
+}
+
+/* info section  */
+.info-container{
+  font-family: "Poppins", sans-serif;
+  background: #f8f8f8;
+
+
+}
+.info-container h2{
+  margin:30px 0px;
+  font-weight: bold;
+  font-size:3rem;
+  color:blue;
+  text-align: center;
+}
+.info-section {
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info-section>div img {
+    height: 90vh;
+}
+
+.info-section-text {
+    display: flex;
+    text-align: left;
+
+    flex-wrap: wrap;
+
+}
+
+.info-section-text div {
+      width: 400px;
+      margin: 20px;
+}
+
+.info-section-text div h1{
+    font-size: 2rem;
+    margin: 20px;
+    margin-left:2px ;
+    color:rgb(5, 5, 62);
+    
+}
+
+.info-section-text div p{
+    font-size: 1rem;
+    line-height: 30px;
+
+}
+.info-section-text div img{
+    width:50px;
+    height: 50px !important;
+}
+
+/* courses section  */
+.courses{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 30px;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 40px;
+}
+.courses-container{
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+.courses-container> h1{
+
+    color: #1e1e4b;
+    font-size: 3rem;
+     margin: 0px 5rem ;
+     padding-top: 30px;
+     
+
+}
+.courses-container >button{
+    display: block;
+    width: 150px;
+    
+    margin: 20px auto;
+    padding: 10px;
+    color: white;
+    background: #012641;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 7px;
+    font-weight: bold;
+
+}
+.courses div{
+    text-align: left;
+    width: 26%;
+    margin: 10px;
+    border:1px solid rgb(216, 213, 213);
+background: white;    
+    
+}
+
+.courses div img{
+    width:100%;
+}
+.courses div h3{
+    text-align: left;
+    font-size: 2rem;
+    margin: 20px;
+    margin-left:0 ;
+    color:rgb(5, 5, 62);
+    padding: 8px;
+}
+.courses div p{
+    font-size: 1rem;
+    line-height: 30px;
+    padding: 8px;
+
+  
+}
+.courses div button{
+    margin: 20px 8px;
+    padding: 10px;
+    color: white;
+    background: #0c8eea;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;   
+
+}
+ /* adding styles to contact us page  */
+
+ 
+
+.maincontainer{
+    font-family: "Poppins", sans-serif;
+
+    width: 100%;
+}
+.container{
+    width: 59%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    margin: 102px auto;
+    
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 40px 0px;
+    text-align: center;
+    color:blue;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 72%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+  margin: auto;
+  display: block;
+}
+
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: blue;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 305px;
+}
+.button input[type="button"]:hover{
+  background: blue;
+}
+
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+
+
+ .maincontainer{
+  font-family: "Poppins", sans-serif;
+
+  width: 100%;
+}
+.container{
+  width: 59%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+  margin: 102px auto;
+  
+}
+.container .content{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.container .content .left-side{
+width: 25%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 15px;
+position: relative;
+}
+.content .left-side::before{
+content: '';
+position: absolute;
+height: 70%;
+width: 2px;
+right: -15px;
+top: 50%;
+transform: translateY(-50%);
+background: #afafb6;
+}
+.content .left-side .details{
+margin: 14px;
+text-align: center;
+}
+.content .left-side .details i{
+font-size: 30px;
+color: #3e2093;
+margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+font-size: 18px;
+font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+font-size: 14px;
+color: #afafb6;
+}
+.container .content .right-side{
+width: 75%;
+margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 40px 0px;
+  text-align: center;
+  color:blue;
+}
+.right-side .input-box{
+height: 50px;
+width: 100%;
+margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+height: 100%;
+width: 72%;
+border: none;
+outline: none;
+font-size: 16px;
+background: #F0F1F8;
+border-radius: 6px;
+padding: 0 15px;
+resize: none;
+margin: auto;
+display: block;
+}
+
+.right-side .input-box textarea{
+padding-top: 6px;
+}
+.right-side .button{
+display: inline-block;
+margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+color: #fff;
+font-size: 18px;
+outline: none;
+border: none;
+padding: 8px 16px;
+border-radius: 6px;
+background: blue;
+cursor: pointer;
+transition: all 0.3s ease;
+margin-left: 305px;
+}
+.button input[type="button"]:hover{
+background: blue;
+}
+
+.container .content{
+  flex-direction: column-reverse;
+}
+.container .content .left-side{
+ width: 100%;
+ flex-direction: row;
+ margin-top: 40px;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+.container .content .left-side::before{
+ display: none;
+}
+.container .content .right-side{
+ width: 100%;
+ margin-left: 0;
+}
+
+/* adding styles to footer  */
+footer {
+    padding:50px 0px;
+    font-family: "Ubuntu", sans-serif;
+    background:rgb(2, 2, 42);
+    color: white;
+    
+  }
+  footer > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  footer h2 ,footer h1{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 0px;
+  }
+  footer li{
+    list-style: none;
+    margin: 10px 0px;
+    font-size: 1.3rem;
+    color:gray
+  }
+  footer a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color:gray;
+  }
+  footer h1{
+    font-size: 2rem;
+  }
+  
+  
+  
